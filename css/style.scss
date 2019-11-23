@@ -204,8 +204,12 @@ body {
 
   &__product {
     position: absolute;
-    right: 104px;
-    bottom: 40px;
+    right: -46px;
+    bottom: -200px;
+  }
+
+  &__wrap{
+    position: relative;
   }
 
   &__title {
@@ -254,7 +258,7 @@ body {
 @media (max-width: 1450px) {
   .about {
     &__product {
-      right: 20px;
+      right: -110px;
     }
   }
 }
