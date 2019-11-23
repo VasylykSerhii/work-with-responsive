@@ -44,6 +44,8 @@ body {
     }
 
     &:hover {
+      color: $main;
+
       &::before {
         width: 50%;
       }
@@ -63,6 +65,7 @@ body {
     line-height: 2;
     font-weight: bold;
     position: relative;
+    transition: $transition;
 
     &-wrap {
       display: flex;
@@ -72,6 +75,7 @@ body {
     span {
       color: #656463;
       font-weight: normal;
+      transition: $transition;
     }
 
     &:before {
@@ -84,6 +88,14 @@ body {
       transform: translateY(-50%) rotate(90deg);
       position: absolute;
       color: $main;
+    }
+
+    &:hover{
+      color: $main;
+
+      span {
+        color: $main;
+      }
     }
   }
 }
